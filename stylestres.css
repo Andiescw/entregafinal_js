@@ -71,3 +71,19 @@ padding: 1rem;
     font-weight: 700;
     text-shadow: 3px 3px 8px black;
 }
+
+#carrito {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#carrito div {
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+}
+
+

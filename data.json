@@ -4,30 +4,30 @@
       "precio": 1250, 
       "tamano": "30m2", 
       "amenidades": "A/C, Wifi, Toiletries, WC Privado", 
-      "imgUrl": "./imagenes/plus.jpg", 
-      "capacidad": 2}, 
+      "imgUrl": "./imagenes/plus.jpg" 
+      }, 
 
     { "id": 2, 
       "tipo": "Estandar", 
       "precio": 1100, 
       "tamano": "25m2", 
       "amenidades": "A/C, Wifi, Toiletries, WC Privado", 
-      "imgUrl": "./imagenes/estandar.jpg", 
-      "capacidad": 2},
+      "imgUrl": "./imagenes/estandar.jpg" 
+      },
 
     { "id": 3, 
       "tipo": "Micro", 
       "precio": 900, 
       "tamano": "15m2", 
       "amenidades": "A/C, Wifi, Toiletries, WC Compartido", 
-      "imgUrl": "./imagenes/micro.jpg", 
-      "capacidad": 1},
+      "imgUrl": "./imagenes/micro.jpg" 
+      },
 
     { "id": 4, 
       "tipo": "Cabina", 
       "precio": 500, 
       "tamano": "5m2", 
       "amenidades": "A/C, Wifi, WC Compartido", 
-      "imgUrl": "./imagenes/cabina.jpg", 
-      "capacidad": 1}
+      "imgUrl": "./imagenes/cabina.jpg" 
+      }
 ]
