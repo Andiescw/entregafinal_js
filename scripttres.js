@@ -8,6 +8,12 @@ fetch("./data.json")
   renderizarHabitaciones(habitaciones);
   renderizarCarrito();
 
+  let btnComprar = document.getElementById("comprar")
+  btnComprar.onclick = () => {
+  localStorage.clear()
+  carrito.innerHTML = ""
+  }
+
 // ------------------------------------ LOGICA PRINCIPAL
 
 function estimado(noches, personas, precioHab) { 
@@ -167,10 +173,10 @@ function renderizarCarrito() {
 
       tarjetaCarrito.innerHTML = `
       <img class="card-img" src=${itemCarrito.imgUrl}>
-      <p class="card-title pt-2"><strong>Tipo:</strong> ${itemCarrito.tipo}</p>
-      <p class="card-text"><strong>Cantidad de Noches:</strong> ${itemCarrito.cantidadNoches}</p>
-      <p class="card-text"><strong>Cantidad de Personas:</strong> ${itemCarrito.cantidadPersonas}</p>
-      <p card-subtitle pb-2><strong>Precio Estimado:</strong> $${itemCarrito.precioEstimado} MXN</p>
+      <p class="card-title pt-2 fw-bold">Tipo:${itemCarrito.tipo}</p>
+      <p class="card-text fw-bold">Cantidad de Noches:${itemCarrito.cantidadNoches}</p>
+      <p class="card-text fw-bold">Cantidad de Personas: ${itemCarrito.cantidadPersonas}</p>
+      <p class="card-subtitle pb-2 fw-bold">Precio Estimado: $${itemCarrito.precioEstimado} MXN</p>
       <button type="button" class="btn btn-danger bg-gradient justify-content-center" id='cartid-${itemCarrito.cartId}'>Eliminar</button>
       `;
       carrito.append(tarjetaCarrito);

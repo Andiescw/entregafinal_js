@@ -86,4 +86,20 @@ padding: 1rem;
     padding: 1rem;
 }
 
+.containerCarrito {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
+}
+
+.tituloCarrito {
+    display: flex;
+    color: lightgrey;
+    font-weight: 900;
+    font-size: 8vh;
+    justify-self: center;
+    align-items: center;
+}
